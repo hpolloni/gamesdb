@@ -3,4 +3,11 @@ name = "gamesdb"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+path = "src/load.rs"
+name = "load"
+
 [dependencies]
+elementtree = "1.2.3"
+sqlx = { version = "0.8.2", features = [ "runtime-tokio", "sqlite"] }
+tokio = { version = "1.40.0", features = ["full"] }
